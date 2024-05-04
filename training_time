@@ -1,0 +1,21 @@
+Classifier: perceptron
+Data: faces
+20 training
+100 testing
+['0.363130092621']
+59.0
+
+Classifier: perceptron
+Data: faces
+30 training
+100 testing
+['0.535717964172']
+59.0
+
+Classifier: perceptron
+Data: faces
+50 training
+100 testing
+['0.886762142181']
+62.0
+
