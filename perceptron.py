@@ -46,7 +46,7 @@ class PerceptronClassifier:
     # THE AUTOGRADER WILL LIKELY DEDUCT POINTS.
     
     for iteration in range(self.max_iterations):
-      print "Starting iteration ", iteration, "..."
+      print ("Starting iteration ", iteration, "...")
       for i in range(len(trainingData)):
           "*** YOUR CODE HERE ***" 
           actual, guess = trainingLabels[i], self.classify([trainingData[i]])[0]  # The actual answer and the guess we are making

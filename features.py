@@ -2,7 +2,7 @@ import numpy as np
 
 def featuresExtract(datum,type):
     if type==0:
-        return basicFeaturesExtract(datum)
+        return basicFeaturesExtract(datum) #just pixels, empty, gray, or edge
     else:
         return advancedFeaturesExtract(datum)
 
