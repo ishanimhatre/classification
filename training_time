@@ -257,3 +257,10 @@ Data: faces
 ['1.38114500046']
 88.6666666667
 
+Classifier: perceptron
+Data: digits
+500 training
+1000 testing
+['7.38154292107']
+68.6
+
