@@ -418,3 +418,17 @@ Data: faces
 ['7.83265280724']
 84.6666666667
 
+Classifier: perceptron
+Data: faces
+451 training
+150 testing
+['7.94909596443']
+84.6666666667
+
+Classifier: perceptron
+Data: faces
+451 training
+150 testing
+['7.80832910538']
+84.6666666667
+

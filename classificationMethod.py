@@ -11,11 +11,9 @@
 class ClassificationMethod:
   """
   ClassificationMethod is the abstract superclass of 
-   - MostFrequentClassifier
    - NaiveBayesClassifier
    - PerceptronClassifier
-   - MiraClassifier
- 
+
   As such, you need not add any code to this file.  You can write
   all of your implementation code in the files for the individual
   classification methods listed above.
@@ -37,7 +35,7 @@ class ClassificationMethod:
     training data for the main supervised training loop but tuning certain parameters
     with a small held-out validation set.
 
-    For some classifiers (naive Bayes, MIRA), you will need to return the parameters' 
+    For some classifiers (naive Bayes), you will need to return the parameters' 
     values after traning and tuning step.
     
     To make the classifier generic to multiple problems, the data should be represented

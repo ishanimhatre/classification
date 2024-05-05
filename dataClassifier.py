@@ -165,7 +165,7 @@ def readCommand( argv ):
   from optparse import OptionParser  
   parser = OptionParser(USAGE_STRING)
   
-  parser.add_option('-c', '--classifier', help=default('The type of classifier'), choices=['mostFrequent', 'nb', 'naiveBayes', 'perceptron', 'mira', 'minicontest','knn','neuralNetwork'], default='mostFrequent')
+  parser.add_option('-c', '--classifier', help=default('The type of classifier'), choices=['naiveBayes', 'perceptron', 'knn','neuralNetwork'], default='naiveBayes')
   parser.add_option('-d', '--data', help=default('Dataset to use'), choices=['digits', 'faces'], default='digits')
   parser.add_option('-t', '--training', help=default('The size of the training set'), default=100, type="int")
   parser.add_option('-f', '--features', help=default('Whether to use enhanced features'), default=False, action="store_true")
@@ -218,18 +218,18 @@ def readCommand( argv ):
     legalLabels = range(2)
     
   if options.training <= 0:
-    print ("Training set size should be a positive integer (you provided: %d)") % options.training
+    print ("Training set size should be a positive integer (you entered: %d)") % options.training
     print (USAGE_STRING)
     sys.exit(2)
     
   if options.smoothing <= 0:
-    print ("Please provide a positive number for smoothing (you provided: %f)") % options.smoothing
+    print ("Enter a positive number for smoothing (you entered: %f)") % options.smoothing
     print (USAGE_STRING)
     sys.exit(2)
     
   if options.odds:
     if options.label1 not in legalLabels or options.label2 not in legalLabels:
-      print ("Didn't provide a legal labels for the odds ratio: (%d,%d)") % (options.label1, options.label2)
+      print ("Illegal labels for the odds ratio: (%d,%d)") % (options.label1, options.label2)
       print (USAGE_STRING)
       sys.exit(2)
 
@@ -333,8 +333,6 @@ def runClassifier(args, options):
   validationData = map(featureFunction, rawValidationData)
   testData = map(featureFunction, rawTestData)
   
-    
-    
   
   # Conduct training and Testing
   print ("Training...")
@@ -345,15 +343,17 @@ def runClassifier(args, options):
   print ("Validating...")
   guesses = classifier.classify(validationData)
   correct = [guesses[i] == validationLabels[i] for i in range(len(validationLabels))].count(True)
-  print str(correct), ("correct out of " + str(len(validationLabels)) + " (%.1f%%).") % (100.0 * correct / len(validationLabels))
+  print (str(correct), ("correct out of " + str(len(validationLabels)) + " (%.1f%%).") % (100.0 * correct / len(validationLabels)))
   print ("Testing...")
   guesses = classifier.classify(testData)
   correct = [guesses[i] == testLabels[i] for i in range(len(testLabels))].count(True)
-  print str(correct), ("correct out of " + str(len(testLabels)) + " (%.1f%%).") % (100.0 * correct / len(testLabels))
+  print (str(correct), ("correct out of " + str(len(testLabels)) + " (%.1f%%).") % (100.0 * correct / len(testLabels)))
   analysis(classifier, guesses, testLabels, testData, rawTestData, printImage)
+
  # print str(guesses) ###############################################################################################################################
   accuracy = str(100.0 * correct / len(testLabels))
-  # do odds ratio computation if specified at command line
+
+  # odds ratio computation if specified at command line
   if((options.odds) & (options.classifier == "naiveBayes" or (options.classifier == "nb")) ):
     label1, label2 = options.label1, options.label2
     features_odds = classifier.findHighOddsFeatures(label1,label2)
