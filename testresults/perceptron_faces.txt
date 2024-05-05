@@ -1,0 +1,62 @@
+Classifier: Perceptron
+Data: Faces
+
+10%
+Training: 45
+Testing: 150
+Accuracy: 91 correct out of 150 - 60.7%
+Time: ['0.818046092987']
+
+20%
+Training: 90
+Testing: 150
+Accuracy: 111 correct out of 150 - 74.0%
+Time: ['1.64477491379']
+
+30%
+Training: 135
+Testing: 150
+Accuracy: 113 correct out of 150 - 75.3%
+Time: ['2.44677305222']
+
+40%
+Training: 180
+Testing: 150
+Accuracy: 124 correct out of 150 - 82.7%
+Time: ['3.20204997063']
+
+50%
+Training: 226
+Testing: 150
+Accuracy: 120 correct out of 150 - 80.0%
+Time: ['4.01999902725']
+
+60%
+Training: 271
+Testing: 150
+Accuracy: 130 correct out of 150 - 86.7%
+Time: ['4.80808901787']
+
+70%
+Training: 316
+Testing: 150
+Accuracy: 122 correct out of 150 - 81.3%%
+Time: ['5.59498286247']
+
+80%
+Training: 361
+Testing: 150
+Accuracy: 122 correct out of 150 - 81.3%%
+Time: ['6.36073088646']
+
+90%
+Training: 406
+Testing: 150
+Accuracy: 126 correct out of 150 - 84.0%
+Time: ['7.12678790092']
+
+100%
+Training: 451
+Testing: 150
+Accuracy: 147 correct out of 150 - 84.7%
+Time: ['7.83265280724']

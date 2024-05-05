@@ -10,7 +10,7 @@ Time: ['0.117331027985']
 20%
 Training: 90
 Testing: 150
-Accuracy: 129 correct out of 150 - 86.0%%
+Accuracy: 129 correct out of 150 - 86.0%
 Time: ['0.223448991776']
 
 30%
