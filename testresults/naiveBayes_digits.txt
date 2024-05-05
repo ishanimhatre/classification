@@ -1,0 +1,62 @@
+Classifier: Naive Bayes
+Data: Digits
+
+10%
+Training: 500
+Testing: 1000
+Accuracy: 693 correct out of 1000 - 69.3%
+Time: ['0.133926868439']
+
+20%
+Training: 1000
+Testing: 1000
+Accuracy: 718 correct out of 1000 - 71.8%
+Time: ['0.252315044403']
+
+30%
+Training: 1500
+Testing: 1000
+Accuracy: 730 correct out of 1000 - 73.8%
+Time: ['0.36647605896']
+
+40%
+Training: 2000
+Testing: 1000
+Accuracy: 741 correct out of 1000 - 74.1%
+Time: ['0.479084968567']
+
+50%
+Training: 2500
+Testing: 1000
+Accuracy: 755 correct out of 1000 - 75.5%
+Time: ['0.597221136093']
+
+60%
+Training: 3000
+Testing: 1000
+Accuracy: 759 correct out of 1000 - 75.9%
+Time: ['0.71064209938']
+
+70%
+Training: 3500
+Testing: 1000
+Accuracy: 762 correct out of 1000 - 76.2%
+Time: ['0.832384824753']
+
+80%
+Training: 4000
+Testing: 1000
+Accuracy: 766 correct out of 1000 - 76.6%
+Time: ['1.08062505722']
+
+90%
+Training: 4500
+Testing: 1000
+Accuracy: 763 correct out of 1000 - 76.3%
+Time: ['1.05335593224']
+
+100%
+Training: 5000
+Testing: 1000
+Accuracy: 768 correct out of 1000 - 76.8%
+Time: ['1.17423796654']

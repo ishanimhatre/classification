@@ -1,0 +1,62 @@
+Classifier: Naive Bayes
+Data: Faces
+
+10%
+Training: 45
+Testing: 150
+Accuracy: 86 correct out of 150 - 57.3%
+Time: ['0.117331027985']
+
+20%
+Training: 90
+Testing: 150
+Accuracy: 129 correct out of 150 - 86.0%%
+Time: ['0.223448991776']
+
+30%
+Training: 135
+Testing: 150
+Accuracy: 130 correct out of 150 - 86.7%
+Time: ['0.333292961121']
+
+40%
+Training: 180
+Testing: 150
+Accuracy: 130 correct out of 150 - 86.7%
+Time: ['0.458054065704']
+
+50%
+Training: 226
+Testing: 150
+Accuracy: 128 correct out of 150 - 85.3%
+Time: ['0.639332056046']
+
+60%
+Training: 271
+Testing: 150
+Accuracy: 131 correct out of 150 - 87.3%
+Time: ['0.78205704689']
+
+70%
+Training: 316
+Testing: 150
+Accuracy: 130 correct out of 150 - 86.7%%
+Time: ['0.895405054092']
+
+80%
+Training: 361
+Testing: 150
+Accuracy: 132 correct out of 150 - 88.0%
+Time: ['1.04610490799']
+
+90%
+Training: 406
+Testing: 150
+Accuracy: 134 correct out of 150 - 89.3%
+Time: ['1.24548196793']
+
+100%
+Training: 451
+Testing: 150
+Accuracy: 133 correct out of 150 - 88.7%
+Time: ['1.38114500046']
